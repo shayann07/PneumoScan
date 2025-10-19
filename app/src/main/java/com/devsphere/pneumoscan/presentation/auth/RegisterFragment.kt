@@ -20,8 +20,12 @@ class RegisterFragment : Fragment() {
     private val b get() = _b!!
     private val vm: AuthViewModel by viewModels()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) =
-        FragmentRegisterBinding.inflate(inflater, container, false).also { _b = it }.root
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _b = FragmentRegisterBinding.inflate(inflater, container, false)
+        return b.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         b.btnRegister.setOnClickListener {
@@ -30,19 +34,29 @@ class RegisterFragment : Fragment() {
             val email = b.etEmail.text.toString().trim()
             val pass = b.etPassword.text.toString().trim()
             val conf = b.etConfirmPassword.text.toString().trim()
+
             if (pass != conf) {
-                Toast.makeText(requireContext(), "Passwords do not match", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Passwords do not match", Toast.LENGTH_SHORT)
+                    .show()
                 return@setOnClickListener
             }
+
             lifecycleScope.launch {
                 vm.register(email, pass, first, last).onSuccess {
-                    Toast.makeText(requireContext(), "Registered ${it.firstName ?: it.email}", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.homeFragment)
+                    Toast.makeText(requireContext(), "Welcome ${it.firstName}", Toast.LENGTH_SHORT)
+                        .show()
+                    findNavController().navigate(R.id.action_register_to_home)
                 }.onFailure { ex ->
-                    Toast.makeText(requireContext(), ex.message ?: "Registration failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(), ex.message ?: "Registration failed", Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
+
+//        b.tvLogin.setOnClickListener {
+//            findNavController().navigate(R.id.action_register_to_login)
+//        }
     }
 
     override fun onDestroyView() {

@@ -6,4 +6,15 @@
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_background">#FFFFFF</color>
     <color name="md_theme_surface">#FFFFFF</color>
+
+
+    <color name="pneumo_primary">#00BFA6</color>       <!-- teal -->
+    <color name="pneumo_primary_variant">#0AA78F</color>
+    <color name="pneumo_onPrimary">#FFFFFF</color>
+    <color name="pneumo_secondary">#3A86FF</color>     <!-- accent -->
+    <color name="pneumo_background">#F7FCFB</color>
+    <color name="pneumo_surface">#FFFFFF</color>
+    <color name="pneumo_onSurface">#0F1720</color>
+    <color name="pneumo_onBackground">#304548</color>
+    <color name="pneumo_muted">#6B7681</color>
 </resources>

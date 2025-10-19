@@ -19,23 +19,36 @@ class LoginFragment : Fragment() {
     private var _b: FragmentLoginBinding? = null
     private val b get() = _b!!
     private val vm: AuthViewModel by viewModels()
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) =
-        FragmentLoginBinding.inflate(inflater, container, false).also { _b = it }.root
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _b = FragmentLoginBinding.inflate(inflater, container, false)
+        return b.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         b.btnLogin.setOnClickListener {
             val email = b.etEmail.text.toString().trim()
             val pass = b.etPassword.text.toString().trim()
+
             lifecycleScope.launch {
                 vm.login(email, pass).onSuccess {
-                    Toast.makeText(requireContext(), "Welcome ${it.firstName ?: it.email}", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.homeFragment)
+                    Toast.makeText(
+                        requireContext(), "Welcome ${it.firstName ?: it.email}", Toast.LENGTH_SHORT
+                    ).show()
+                    findNavController().navigate(R.id.action_login_to_home)
                 }.onFailure { ex ->
-                    Toast.makeText(requireContext(), ex.message ?: "Login failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(), ex.message ?: "Login failed", Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
-        b.tvRegister.setOnClickListener { findNavController().navigate(R.id.registerFragment) }
+
+        b.tvRegister.setOnClickListener {
+            findNavController().navigate(R.id.action_login_to_register)
+        }
     }
 
     override fun onDestroyView() {
