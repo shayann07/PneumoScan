@@ -32,3 +32,10 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Generated files
+app/release/
+app/debug/
+
+# Jetpack Compose / Build cache
+buildSrc/
