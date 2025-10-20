@@ -46,6 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/bg_soft_gradient"
                 android:padding="18dp">
 
                 <com.google.android.material.textfield.TextInputLayout

@@ -51,13 +51,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="14dp"
-                app:strokeWidth="0dp"
                 app:cardElevation="4dp"
+                app:strokeWidth="0dp"
                 app:useCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/bg_soft_gradient"
                     android:orientation="vertical"
                     android:padding="18dp">
 
@@ -86,15 +87,16 @@
                 android:id="@+id/cardTesting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:strokeWidth="0dp"
-                app:cardElevation="4dp"
-                app:useCompatPadding="true"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="14dp">
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="0dp"
+                app:useCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/bg_soft_gradient"
                     android:orientation="vertical"
                     android:padding="18dp">
 
