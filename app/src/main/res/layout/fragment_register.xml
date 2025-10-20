@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/register"
-            android:textColor="?attr/colorOnBackground"
+            android:textColor="@color/black"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="Create a secure account to save results and notes."
+            android:text="@string/create_a_secure_account_to_save_results_and_notes"
             android:textColor="@color/pneumo_muted"
             android:textSize="14sp" />
 
@@ -38,7 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:cardCornerRadius="14dp"
-            app:cardElevation="6dp">
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@color/black"
+            app:cardBackgroundColor="@android:color/transparent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,6 +52,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/first_name"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
                     app:boxBackgroundColor="?attr/colorSurface"
                     app:boxStrokeColor="?attr/colorPrimary">
 
@@ -63,6 +69,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
                     android:hint="@string/last_name"
                     app:boxBackgroundColor="?attr/colorSurface"
                     app:boxStrokeColor="?attr/colorPrimary">
@@ -77,6 +87,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
                     android:hint="@string/email"
                     app:boxBackgroundColor="?attr/colorSurface"
                     app:boxStrokeColor="?attr/colorPrimary">
@@ -92,6 +106,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
                     android:hint="@string/password"
                     app:boxBackgroundColor="?attr/colorSurface"
                     app:boxStrokeColor="?attr/colorPrimary">
@@ -107,6 +125,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
                     android:hint="@string/confirm_password"
                     app:boxBackgroundColor="?attr/colorSurface"
                     app:boxStrokeColor="?attr/colorPrimary">

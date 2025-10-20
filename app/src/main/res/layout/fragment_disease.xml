@@ -17,8 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/disease_title"
-            android:textColor="?attr/colorOnBackground"
-            android:textSize="22sp"
+            android:paddingTop="40dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <com.google.android.material.card.MaterialCardView
@@ -26,7 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             app:cardCornerRadius="14dp"
-            app:cardElevation="6dp">
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@color/black"
+            app:cardBackgroundColor="@android:color/transparent">
 
             <TextView
                 android:id="@+id/tvDescription"
@@ -34,17 +37,18 @@
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4dp"
                 android:padding="18dp"
-                android:text="Detailed description about pneumonia, causes, symptoms, and prevention methods."
+                android:text="@string/detailed_description_about_pneumonia_causes_symptoms_and_prevention_methods"
                 android:textColor="@color/pneumo_muted"
                 android:textSize="14sp" />
         </com.google.android.material.card.MaterialCardView>
 
         <TextView
+            android:id="@+id/tvQuickFacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/quick_facts"
-            android:textColor="?attr/colorOnBackground"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>

@@ -31,11 +31,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_back"
-                android:textColor="?attr/colorOnBackground"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvSubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -50,7 +51,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="14dp"
-                app:cardElevation="6dp">
+                app:strokeWidth="0.5dp"
+                app:strokeColor="@color/black"
+                app:cardBackgroundColor="@android:color/transparent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,14 +62,16 @@
                     android:padding="18dp">
 
                     <TextView
+                        android:id="@+id/tvDiseaseInfo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/disease_info"
-                        android:textColor="?attr/colorOnBackground"
+                        android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
@@ -81,9 +86,11 @@
                 android:id="@+id/cardTesting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="14dp"
-                app:cardElevation="6dp">
+                app:strokeWidth="0.5dp"
+                app:strokeColor="@color/black"
+                app:cardCornerRadius="14dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -92,14 +99,16 @@
                     android:padding="18dp">
 
                     <TextView
+                        android:id="@+id/tvQuickTest"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/quick_test"
-                        android:textColor="?attr/colorOnBackground"
+                        android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvDescription2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"

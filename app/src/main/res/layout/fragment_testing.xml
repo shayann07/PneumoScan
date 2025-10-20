@@ -12,7 +12,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/run_screening"
-        android:textColor="?attr/colorOnBackground"
+        android:textColor="@color/black"
+        android:paddingTop="40dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,9 @@
         android:layout_height="260dp"
         android:layout_marginTop="18dp"
         app:cardCornerRadius="14dp"
-        app:cardElevation="6dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp"
+        app:cardBackgroundColor="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTestTitle">
@@ -47,6 +50,7 @@
                 app:tint="?attr/colorPrimary" />
 
             <TextView
+                android:id="@+id/tvNoImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -117,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/prediction"
-        android:textColor="?attr/colorOnBackground"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

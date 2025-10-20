@@ -27,4 +27,8 @@
     <string name="quick_facts">Quick Facts</string>
     <string name="splash_tagline">Fast lung screening · clinical insights</string>
     <string name="terms_short">By continuing you agree to our Terms &amp; Privacy Policy</string>
+    <string name="fast_lung_screening_clinical_insights">Fast lung screening · clinical insights</string>
+    <string name="pneumoscan">PneumoScan</string>
+    <string name="create_a_secure_account_to_save_results_and_notes">Create a secure account to save results and notes.</string>
+    <string name="detailed_description_about_pneumonia_causes_symptoms_and_prevention_methods">Detailed description about pneumonia, causes, symptoms, and prevention methods.</string>
 </resources>
