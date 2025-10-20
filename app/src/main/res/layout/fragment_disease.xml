@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/disease_title"
-            android:paddingTop="40dp"
+            android:paddingTop="10dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -27,9 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             app:cardCornerRadius="14dp"
-            app:strokeWidth="0.5dp"
-            app:strokeColor="@color/black"
-            app:cardBackgroundColor="@android:color/transparent">
+            app:strokeWidth="0dp"
+            app:cardElevation="8dp"
+            app:useCompatPadding="true">
 
             <TextView
                 android:id="@+id/tvDescription"

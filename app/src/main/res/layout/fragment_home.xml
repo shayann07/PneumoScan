@@ -51,9 +51,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="14dp"
-                app:strokeWidth="0.5dp"
-                app:strokeColor="@color/black"
-                app:cardBackgroundColor="@android:color/transparent">
+                app:strokeWidth="0dp"
+                app:cardElevation="4dp"
+                app:useCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,10 +86,10 @@
                 android:id="@+id/cardTesting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@android:color/transparent"
+                app:strokeWidth="0dp"
+                app:cardElevation="4dp"
+                app:useCompatPadding="true"
                 android:layout_marginTop="16dp"
-                app:strokeWidth="0.5dp"
-                app:strokeColor="@color/black"
                 app:cardCornerRadius="14dp">
 
                 <LinearLayout
